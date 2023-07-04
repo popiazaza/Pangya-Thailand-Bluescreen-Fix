@@ -12,9 +12,9 @@ Although, this bypass doesn't modify the game client, it only modifies the reque
 
 **This method is using Windows proxy setup script and port 8080 to run a proxy server. Do NOT use if you are already using a proxy server.**
 
-1. Download the `Pangya Thailand Bluescreen Fix` latest release from this Github.
-2. Install [mitmproxy](https://mitmproxy.org/).
-3. Open `start.bat`.
+1. Install [mitmproxy](https://mitmproxy.org/).
+2. Download the `Pangya Thailand Bluescreen Fix` [latest release](https://github.com/popiazaza/Pangya-Thailand-Bluescreen-Fix/archive/refs/heads/main.zip) from this Github.
+3. Unzip `Pangya-Thailand-Bluescreen-Fix-main.zip` and open `start.bat`.
 4. Open `Pangya` (update.exe) as usual and enjoy.
 5. Once you finished playing `Pangya`, press `Ctrl + C` to stop the proxy server and remove the proxy setup script.
 
@@ -30,11 +30,12 @@ As Pangya Thailand is no longer maintained, the GameGuard client is not updated 
 
 ## How it works
 
-This addon will create a local proxy server and use a proxy setup script (from `proxy.pac`) to redirect traffic that targets GameGuard server to the proxy server. The proxy server will then modify the request to crash the GameGuard client and return a fake response to the game client.
+This addon will create a local proxy server and use a proxy setup script (from [proxy.pac](https://github.com/popiazaza/Pangya-Thailand-Bluescreen-Fix/blob/main/proxy.pac)) to redirect traffic that targets GameGuard server to the proxy server. The proxy server will then modify the request to crash the GameGuard client and return a fake response to the game client.
 
 ## To-do
 
 Auto checking available port and auto update `proxy.pac` to use the available port.
+
 Meanwhile, you can edit `proxy.pac` from 8080 to 8081 (or any other port) and run `mitmdump -s proxy.py --listen-port 8081`.
 
 ## License
