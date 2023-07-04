@@ -8,17 +8,27 @@ Although, this bypass doesn't modify the game client, it only modifies the reque
 
 > Alternatively, you can use virtual machine like [VirtualBox](https://www.virtualbox.org/) to play Pangya on Windows 10 version 1909 or older. Also, make sure to disable windows update on the virtual machine.
 
-## How to use
+## How to install
 
 **This method is using Windows proxy setup script and port 8080 to run a proxy server. Do NOT use if you are already using a proxy server.**
 
 1. Install [mitmproxy](https://mitmproxy.org/).
 2. Download the `Pangya Thailand Bluescreen Fix` [latest release](https://github.com/popiazaza/Pangya-Thailand-Bluescreen-Fix/archive/refs/heads/main.zip) from this Github.
-3. Unzip `Pangya-Thailand-Bluescreen-Fix-main.zip` and open `start.bat`.
-4. Open `Pangya` (update.exe) as usual and enjoy.
-5. Once you finished playing `Pangya`, press `Ctrl + C` to stop the proxy server and remove the proxy setup script.
+3. Unzip `Pangya-Thailand-Bluescreen-Fix-main.zip`.
+
+## How to use
+
+1. Run `start.bat` in the extracted folder.
+2. Run `Pangya` (update.exe) as usual and enjoy.
+3. Once you finished playing `Pangya`, press `Ctrl + C` to stop the proxy server and remove the proxy setup script.
 
 > If `Pangya Thailand Bluescreen Fix` is not closed properly and it somehow cause you internet problem, you can remove the proxy setup script from Windows setting mannually.
+
+## How to uninstall
+
+1. Uninstall `mitmproxy` from `Add or remove programs` in Windows setting.
+2. Delete the extracted folder.
+3. (Optional) Check if you need to remove the proxy setup script from Windows setting.
 
 ![Windows Proxy Setting](https://raw.githubusercontent.com/popiazaza/Pangya-Thailand-Bluescreen-Fix/main/images/proxy_config.jpg)
 
